@@ -3,19 +3,109 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="DevsCrew Inc. - Expert SuiteCommerce Solutions">
-  <title>DevsCrew Inc. | SuiteCommerce Solutions</title>
+  <meta name="description" content="DevsCrew Inc. - NetSuite & SuiteCommerce Experts">
+  <title>DevsCrew Inc. | NetSuite & SuiteCommerce</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6; color: #333; }
-    header, footer { background-color: #8B2C23; color: white; padding: 20px; text-align: center; }
-    nav a { color: white; margin: 0 15px; text-decoration: none; }
-    .container { max-width: 1100px; margin: auto; padding: 20px; }
-    .hero { background-color: #f5f5f5; padding: 40px 20px; text-align: center; }
-    .section { margin: 40px 0; }
-    .section h2 { color: #2A4A7B; }
-    .cta { background-color: #2A4A7B; color: white; padding: 20px; text-align: center; margin-top: 40px; }
-    .cta a { background: white; color: #2A4A7B; padding: 10px 20px; text-decoration: none; border-radius: 5px; }
-    .logo { max-height: 80px; display: block; margin: 0 auto 10px; }
+    :root {
+      --primary: #8B2C23;
+      --secondary: #2A4A7B;
+      --light: #f9f9f9;
+      --dark: #222;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: var(--light);
+      color: var(--dark);
+    }
+
+    header {
+      background: var(--primary);
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    header img.logo {
+      max-height: 80px;
+      margin-bottom: 10px;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    .hero {
+      background: var(--secondary);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      margin-bottom: 10px;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    .section {
+      margin-bottom: 60px;
+    }
+
+    .section h2 {
+      color: var(--secondary);
+      margin-bottom: 20px;
+    }
+
+    ul {
+      line-height: 1.8;
+    }
+
+    form {
+      display: grid;
+      gap: 15px;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    input, textarea {
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+      width: 100%;
+    }
+
+    button {
+      background: var(--primary);
+      color: white;
+      padding: 12px;
+      border: none;
+      font-size: 1rem;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    footer {
+      background: var(--primary);
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+    }
   </style>
 </head>
 <body>
@@ -25,42 +115,47 @@
     <nav>
       <a href="#about">About</a>
       <a href="#services">Services</a>
+      <a href="#netsuite">NetSuite</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
   <div class="hero">
-    <h2>SuiteCommerce Solutions Built for Growth</h2>
-    <p>Custom development, optimization, and integration by experienced NetSuite developers.</p>
+    <h1>SuiteCommerce & NetSuite Solutions</h1>
+    <p>Driving business success with robust eCommerce integrations and cloud ERP solutions.</p>
   </div>
 
   <div class="container">
     <section id="about" class="section">
       <h2>About Us</h2>
-      <p>At DevsCrew Inc., we help companies build robust, scalable, and tailored SuiteCommerce solutions. With over a decade of experience in NetSuite development, we deliver exceptional value to every project we undertake.</p>
+      <p>DevsCrew Inc. is a specialized development team focused on building powerful SuiteCommerce solutions. With over a decade of experience in NetSuite and eCommerce, we help companies create customized, scalable storefronts fully integrated with their back-office systems.</p>
     </section>
 
     <section id="services" class="section">
-      <h2>Our Services</h2>
+      <h2>What We Do</h2>
       <ul>
-        <li><strong>SuiteCommerce Implementation:</strong> From strategy to deployment, we ensure your storefront is launched successfully.</li>
-        <li><strong>Customizations:</strong> We tailor SuiteCommerce to match your business processes and customer needs.</li>
-        <li><strong>Performance Optimization:</strong> Enhance speed, responsiveness, and SEO of your storefront.</li>
-        <li><strong>Integrations:</strong> Seamless integration with CRMs, ERPs, and third-party services.</li>
-        <li><strong>Ongoing Support:</strong> Continuous improvements and technical assistance as your business grows.</li>
+        <li><strong>SuiteCommerce Advanced (SCA) Customization</strong></li>
+        <li><strong>Theme Development & Performance Optimization</strong></li>
+        <li><strong>NetSuite Integrations: CRMs, Payment Gateways, 3PL</strong></li>
+        <li><strong>API Integrations: DocuSign, Twilio, Asterisk, Mailchimp & more</strong></li>
+        <li><strong>Post-launch Support & Maintenance</strong></li>
       </ul>
+    </section>
+
+    <section id="netsuite" class="section">
+      <h2>Why NetSuite?</h2>
+      <p>NetSuite is the leading cloud ERP system for businesses seeking seamless automation across finance, CRM, inventory, and commerce. Our expertise ensures your SuiteCommerce store is tightly integrated with NetSuite's core modules, enabling real-time data flow and operational efficiency.</p>
     </section>
 
     <section id="contact" class="section">
       <h2>Contact Us</h2>
-      <p>Email: <a href="mailto:info@devscrewinc.com">info@devscrewinc.com</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/company/92620256/">DevsCrew Inc. on LinkedIn</a></p>
+      <form>
+        <input type="text" name="name" placeholder="Your name" required />
+        <input type="email" name="email" placeholder="Your email" required />
+        <textarea name="message" rows="5" placeholder="Your message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
     </section>
-
-    <div class="cta">
-      <h2>Ready to elevate your SuiteCommerce store?</h2>
-      <a href="mailto:info@devscrewinc.com">Get in Touch</a>
-    </div>
   </div>
 
   <footer>
