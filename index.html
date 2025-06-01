@@ -10,191 +10,75 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="DevsCrew Inc. - NetSuite & SuiteCommerce Experts">
   <title>DevsCrew Inc. | NetSuite & SuiteCommerce</title>
-  <style>
-    :root {
-      --primary: #ac2a29;
-      --secondary: #2A4A7B;
-      --light: #f9f9f9;
-      --dark: #222;
-    }
-
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: var(--light);
-      color: var(--dark);
-    }
-
-    header {
-      background: white;
-      color: var(--primary);
-      padding: 30px 20px;
-      text-align: center;
-    }
-
-    header img.logo {
-      max-height: 80px;
-      margin-bottom: 10px;
-    }
-
-    nav {
-      margin-top: 10px;
-    }
-
-    nav a {
-      color: var(--primary);
-      text-decoration: none;
-      margin: 0 15px;
-      font-weight: bold;
-    }
-
-    .hero {
-      background: var(--secondary);
-      color: white;
-      padding: 60px 20px;
-      text-align: center;
-    }
-
-    .hero h1 {
-      margin-bottom: 10px;
-    }
-
-    .container {
-      max-width: 1100px;
-      margin: auto;
-      padding: 40px 20px;
-    }
-
-    .section {
-      margin-bottom: 60px;
-    }
-
-    .section h2 {
-      color: var(--secondary);
-      margin-bottom: 20px;
-    }
-
-    ul {
-      line-height: 1.8;
-    }
-
-    form {
-      display: grid;
-      gap: 15px;
-      max-width: 600px;
-      margin: auto;
-    }
-
-    input, textarea {
-      padding: 12px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      font-size: 1rem;
-      width: 100%;
-    }
-
-    button {
-      background: var(--primary);
-      color: white;
-      padding: 12px;
-      border: none;
-      font-size: 1rem;
-      cursor: pointer;
-      border-radius: 5px;
-    }
-    .service {
-        background: white;
-        border-radius: 12px;
-        padding: 20px;
-        margin-bottom: 20px;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-    }
-
-    footer {
-      background: var(--primary);
-      color: white;
-      text-align: center;
-      padding: 20px;
-      font-size: 0.9rem;
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <img src="logo.png" alt="DevsCrew Logo" class="logo" />
-    <!-- <h1>DevsCrew Inc.</h1> -->
-    <nav>
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#netsuite">NetSuite</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+  <div id="header-container"></div>
 
-  <div class="hero">
+  <div class="hero fade-in">
     <h1>SuiteCommerce & NetSuite Solutions</h1>
     <p>Driving business success with robust eCommerce integrations and cloud ERP solutions.</p>
   </div>
 
-  <div class="container">
-    <section id="about" class="section">
-      <h2>About Us</h2>
-      <p>DevsCrew Inc. is a specialized development team focused on building powerful SuiteCommerce solutions. With over a decade of experience in NetSuite and eCommerce, we help companies create customized, scalable storefronts fully integrated with their back-office systems.</p>
+  <div class="container fade-in">
+    <section class="section">
+      <h2>Welcome to DevsCrew Inc.</h2>
+      <p>We are a specialized development team focused on building powerful SuiteCommerce solutions. With over a decade of experience in NetSuite and eCommerce, we help companies create customized, scalable storefronts fully integrated with their back-office systems.</p>
+      
+      <div class="stats-grid">
+        <div class="stat">
+          <h3>10+</h3>
+          <p>Years Experience</p>
+        </div>
+        <div class="stat">
+          <h3>100+</h3>
+          <p>Successful Projects</p>
+        </div>
+        <div class="stat">
+          <h3>50+</h3>
+          <p>Happy Clients</p>
+        </div>
+        <div class="stat">
+          <h3>24/7</h3>
+          <p>Support</p>
+        </div>
+      </div>
+      
+      <div class="highlight">
+        <h3>Unleash Your Business Potential with NetSuite</h3>
+        <p>Eliminate integrations among disparate systems with natively unified ecommerce, POS, inventory and order management, marketing, customer service and financials.</p>
+        <p>Ready to transform your business?</p>
+        <a href="contact.html"><button style="margin-top: 20px;">Get Started Today</button></a>
+      </div>
     </section>
 
-    <section id="services" class="section">
-      <h2>What We Do</h2>
+    <section class="section">
+      <h2>Our Services</h2>
       <div class="service">
-            <h3>🔧 NetSuite Development</h3>
-            <ul>
-                <li>Custom SuiteScripts (1.0 & 2.x)</li>
-                <li>Suitelet & RESTlet creation</li>
-                <li>Workflow Automation</li>
-                <li>Custom Records & Fields</li>
-                <li>Integration with 3rd-party APIs</li>
-            </ul>
-        </div>
-        <div class="service">
-            <h3>🛠 NetSuite Administration</h3>
-            <ul>
-                <li>Role & Permission Management</li>
-                <li>Saved Searches & Reports</li>
-                <li>Dashboard Customization</li>
-                <li>Data Imports & CSV Processing</li>
-                <li>User Training & Support</li>
-            </ul>
-        </div>
-        <div class="service">
-            <h3>🛍 SuiteCommerce (SCA & SC)</h3>
-            <ul>
-                <li>SuiteCommerce Advanced Development</li>
-                <li>Custom Theme Design & UX Enhancements</li>
-                <li>Extensions & Plugins</li>
-                <li>Checkout and Payment Gateway Customization</li>
-                <li>Performance Optimization & SEO Setup</li>
-            </ul>
-        </div>
-    </section>
-
-    <section id="netsuite" class="section">
-      <h2>Why NetSuite?</h2>
-      <p>NetSuite is the leading cloud ERP system for businesses seeking seamless automation across finance, CRM, inventory, and commerce. Our expertise ensures your SuiteCommerce store is tightly integrated with NetSuite's core modules, enabling real-time data flow and operational efficiency.</p>
-    </section>
-
-    <section id="contact" class="section">
-      <h2>Contact Us</h2>
-      <form>
-        <input type="text" name="name" placeholder="Your name" required />
-        <input type="email" name="email" placeholder="Your email" required />
-        <textarea name="message" rows="5" placeholder="Your message" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
+        <h3>🔧 NetSuite Development</h3>
+        <p>Custom solutions tailored to your specific business requirements.</p>
+        <a href="services.html#netsuite-development"><button style="margin-top: 15px;">Learn More</button></a>
+      </div>
+      
+      <div class="service">
+        <h3>🛠 NetSuite Administration</h3>
+        <p>Expert management of your NetSuite environment for optimal performance.</p>
+        <a href="services.html#netsuite-administration"><button style="margin-top: 15px;">Learn More</button></a>
+      </div>
+      
+      <div class="service">
+        <h3>🛍 SuiteCommerce Solutions</h3>
+        <p>Build engaging, feature-rich eCommerce experiences integrated with your back-office.</p>
+        <a href="services.html#suitecommerce"><button style="margin-top: 15px;">Learn More</button></a>
+      </div>
     </section>
   </div>
 
-  <footer>
-    <p>&copy; 2025 DevsCrew Inc. All rights reserved.</p>
-  </footer>
+  <div id="footer-container"></div>
+
+  <script src="common.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', loadHeaderAndFooter);
+  </script>
 </body>
 </html>
