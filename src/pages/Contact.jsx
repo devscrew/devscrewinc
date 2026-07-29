@@ -4,13 +4,13 @@ const Contact = () => {
       <section className="section" style={{paddingTop:'8rem'}}>
         <div className="text-center mb-8">
           <p className="section-subtitle">GET IN TOUCH</p>
-          <h1 className="section-title">Let's Discuss Your NetSuite Project</h1>
+          <h1 className="section-title" style={{color:'#ac2a29'}}>Let's Discuss Your NetSuite Project</h1>
           <p>Ready to transform your business with NetSuite and SuiteCommerce? Contact us today for a consultation.</p>
         </div>
 
         <div className="grid" style={{gridTemplateColumns: '1fr 1fr', gap: '3rem'}}>
           <div>
-            <h2 className="section-title">Contact Information</h2>
+            <h2 className="section-title" style={{color:'#ac2a29'}}>Contact Information</h2>
             <div style={{marginBottom:'2rem'}}>
               <h3>Get in Touch</h3>
               <p style={{marginBottom:'1rem'}}>Email us at info@devscrewinc.com</p>
@@ -31,7 +31,7 @@ const Contact = () => {
           </div>
 
           <div>
-            <h2 className="section-title">Send us a Message</h2>
+            <h2 className="section-title" style={{color:'#ac2a29'}}>Send us a Message</h2>
             <form style={{display:'flex',flexDirection:'column',gap:'1rem'}}>
               <input
                 type="text"
@@ -56,7 +56,7 @@ const Contact = () => {
               <button
                 type="submit"
                 className="btn btn-primary"
-                style={{alignSelf:'flex-start',width:'fit-content'}}
+                style={{alignSelf:'flex-start',width:'fit-content',backgroundColor:'#ac2a29',color:'white',border:'none'}}
               >
                 Send Message
               </button>

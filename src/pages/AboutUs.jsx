@@ -17,51 +17,51 @@ const AboutUs = () => {
         </div>
 
         <div className="text-center mb-8">
-          <h2 className="section-title">Our Expertise</h2>
+          <h2 className="section-title" style={{color:'#ac2a29'}}>Our Expertise</h2>
           <p>Specializing in NetSuite ERP and SuiteCommerce solutions across multiple industries.</p>
         </div>
 
         <div className="grid" style={{gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '2rem'}}>
           <div style={{padding:'2rem', borderRadius:'10px', backgroundColor:'#f8fafc', textAlign:'center'}}>
-            <h3>NetSuite Implementation</h3>
+            <h3 style={{color:'#ac2a29'}}>NetSuite Implementation</h3>
             <p>End-to-end implementation of NetSuite ERP solutions tailored to your business needs.</p>
           </div>
 
           <div style={{padding:'2rem', borderRadius:'10px', backgroundColor:'#f8fafc', textAlign:'center'}}>
-            <h3>SuiteCommerce Customization</h3>
+            <h3 style={{color:'#ac2a29'}}>SuiteCommerce Customization</h3>
             <p>Customized e-commerce storefronts that drive customer engagement and conversions.</p>
           </div>
 
           <div style={{padding:'2rem', borderRadius:'10px', backgroundColor:'#f8fafc', textAlign:'center'}}>
-            <h3>Integration Services</h3>
+            <h3 style={{color:'#ac2a29'}}>Integration Services</h3>
             <p>Seamless integration between NetSuite, SuiteCommerce, and third-party applications.</p>
           </div>
 
           <div style={{padding:'2rem', borderRadius:'10px', backgroundColor:'#f8fafc', textAlign:'center'}}>
-            <h3>Consultation & Strategy</h3>
+            <h3 style={{color:'#ac2a29'}}>Consultation & Strategy</h3>
             <p>Strategic consulting to maximize your NetSuite investment and align with business goals.</p>
           </div>
         </div>
 
         <div className="text-center mt-8">
-          <h2 className="section-title">Why Choose Us?</h2>
+          <h2 className="section-title" style={{color:'#ac2a29'}}>Why Choose Us?</h2>
           <p className="mb-4">We combine technical expertise with business acumen to deliver solutions that drive real results.</p>
 
           <div className="grid" style={{gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '2rem', marginTop:'2rem'}}>
             <div style={{textAlign:'center'}}>
-              <p style={{fontSize:'2rem', color:'#1a5fb4'}}>🏆</p>
+              <p style={{fontSize:'2rem', color:'#ac2a29'}}>🏆</p>
               <h3>Industry Recognition</h3>
               <p>Certified NetSuite partners with proven track record</p>
             </div>
 
             <div style={{textAlign:'center'}}>
-              <p style={{fontSize:'2rem', color:'#1a5fb4'}}>📈</p>
+              <p style={{fontSize:'2rem', color:'#ac2a29'}}>📈</p>
               <h3>Measurable Results</h3>
               <p>Delivered solutions that drive business impact</p>
             </div>
 
             <div style={{textAlign:'center'}}>
-              <p style={{fontSize:'2rem', color:'#1a5fb4'}}>🤝</p>
+              <p style={{fontSize:'2rem', color:'#ac2a29'}}>🤝</p>
               <h3>Client-Centric Approach</h3>
               <p>Personalized services tailored to your specific needs</p>
             </div>
