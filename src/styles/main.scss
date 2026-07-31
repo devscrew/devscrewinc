@@ -1,0 +1,20 @@
+// ==========================================
+// Main Stylesheet
+// ==========================================
+
+// Import variables and mixins first
+@import 'variables';
+@import 'mixins';
+
+// Import base styles
+@import 'base';
+
+// Import component styles
+@import '../components/Header.scss';
+@import '../components/Footer.scss';
+
+// Import page styles
+@import '../pages/Home.scss';
+@import '../pages/AboutUs.scss';
+@import '../pages/Services.scss';
+@import '../pages/Contact.scss';

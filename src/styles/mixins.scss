@@ -1,0 +1,24 @@
+// ==========================================
+// Mixins
+// ==========================================
+
+// Transition mixin
+@mixin transition-base {
+  transition: all 0.3s ease;
+}
+
+// Button mixin
+@mixin btn-base {
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--border-radius-md);
+  font-weight: var(--font-weight-medium);
+  cursor: pointer;
+  border: none;
+  @include transition-base;
+}
+
+// Grid mixin
+@mixin grid-base {
+  display: grid;
+  gap: var(--spacing-xl);
+}

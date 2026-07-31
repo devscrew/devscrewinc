@@ -1,62 +1,63 @@
+import './Contact.scss';
+
 const Contact = () => {
   return (
     <div className="container">
-      <section className="section" style={{paddingTop:'8rem'}}>
+      <section className="section contact-section">
         <div className="text-center mb-8">
           <p className="section-subtitle">GET IN TOUCH</p>
-          <h1 className="section-title" style={{color:'#ac2a29'}}>Let's Discuss Your NetSuite Project</h1>
+          <h1 className="section-title">Let's Discuss Your NetSuite Project</h1>
           <p>Ready to transform your business with NetSuite and SuiteCommerce? Contact us today for a consultation.</p>
         </div>
 
-        <div className="grid" style={{gridTemplateColumns: '1fr 1fr', gap: '3rem'}}>
-          <div>
-            <h2 className="section-title" style={{color:'#ac2a29'}}>Contact Information</h2>
-            <div style={{marginBottom:'2rem'}}>
+        <div className="grid contact-grid">
+          <div className="contact-info">
+            <h2 className="section-title">Contact Information</h2>
+            <div className="contact-details mb-6">
               <h3>Get in Touch</h3>
-              <p style={{marginBottom:'1rem'}}>Email us at info@devscrewinc.com</p>
-              <p style={{marginBottom:'1rem'}}>Call us at +1 (555) 123-4567</p>
-              <p>Based in [Your Location]</p>
+              <p className="contact-item">Email us at info@devscrewinc.com</p>
+              <p className="contact-item">Call us at +1 (555) 123-4567</p>
+              <p className="contact-item">Based in [Your Location]</p>
             </div>
 
-            <div>
+            <div className="services-list">
               <h3>Our Services</h3>
-              <ul style={{listStyle:'none', paddingLeft:'0'}}>
-                <li style={{marginBottom:'0.5rem'}}>• NetSuite Implementation</li>
-                <li style={{marginBottom:'0.5rem'}}>• SuiteCommerce Customization</li>
-                <li style={{marginBottom:'0.5rem'}}>• Integration Services</li>
-                <li style={{marginBottom:'0.5rem'}}>• Consultation & Strategy</li>
-                <li style={{marginBottom:'0.5rem'}}>• Ongoing Support & Maintenance</li>
+              <ul className="services-list-items">
+                <li className="service-item">• NetSuite Implementation</li>
+                <li className="service-item">• SuiteCommerce Customization</li>
+                <li className="service-item">• Integration Services</li>
+                <li className="service-item">• Consultation & Strategy</li>
+                <li className="service-item">• Ongoing Support & Maintenance</li>
               </ul>
             </div>
           </div>
 
-          <div>
-            <h2 className="section-title" style={{color:'#ac2a29'}}>Send us a Message</h2>
-            <form style={{display:'flex',flexDirection:'column',gap:'1rem'}}>
+          <div className="contact-form">
+            <h2 className="section-title">Send us a Message</h2>
+            <form className="contact-form-elements">
               <input
                 type="text"
                 placeholder="Your Name"
-                style={{padding:'0.75rem',borderRadius:'5px',border:'1px solid #e5e7eb',fontSize:'1rem'}}
+                className="form-input"
               />
               <input
                 type="email"
                 placeholder="Your Email"
-                style={{padding:'0.75rem',borderRadius:'5px',border:'1px solid #e5e7eb',fontSize:'1rem'}}
+                className="form-input"
               />
               <input
                 type="text"
                 placeholder="Subject"
-                style={{padding:'0.75rem',borderRadius:'5px',border:'1px solid #e5e7eb',fontSize:'1rem'}}
+                className="form-input"
               />
               <textarea
                 placeholder="Your Message"
                 rows="5"
-                style={{padding:'0.75rem',borderRadius:'5px',border:'1px solid #e5e7eb',fontSize:'1rem'}}
+                className="form-textarea"
               ></textarea>
               <button
                 type="submit"
                 className="btn btn-primary"
-                style={{alignSelf:'flex-start',width:'fit-content',backgroundColor:'#ac2a29',color:'white',border:'none'}}
               >
                 Send Message
               </button>

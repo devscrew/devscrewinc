@@ -1,0 +1,79 @@
+// ==========================================
+// Contact Page Styles
+// ==========================================
+
+.contact-section {
+  padding-top: 8rem;
+}
+
+.contact-grid {
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+
+.contact-info {
+  h2 {
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-md);
+  }
+}
+
+.contact-details {
+  h3 {
+    margin-bottom: var(--spacing-md);
+  }
+
+  .contact-item {
+    margin-bottom: var(--spacing-sm);
+    color: var(--text-medium);
+  }
+}
+
+.services-list {
+  h3 {
+    margin-bottom: var(--spacing-md);
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .service-item {
+    margin-bottom: var(--spacing-xs);
+    color: var(--text-medium);
+  }
+}
+
+.contact-form {
+  h2 {
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-md);
+  }
+
+  .contact-form-elements {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+  }
+
+  .form-input,
+  .form-textarea {
+    padding: 0.75rem;
+    border-radius: var(--border-radius-md);
+    border: 1px solid #e5e7eb;
+    font-size: 1rem;
+  }
+
+  .form-textarea {
+    resize: vertical;
+  }
+
+  .btn-primary {
+    align-self: flex-start;
+    width: fit-content;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+  }
+}

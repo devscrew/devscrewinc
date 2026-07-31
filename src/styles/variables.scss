@@ -1,0 +1,48 @@
+// ==========================================
+// CSS Variables
+// ==========================================
+
+:root {
+  // Colors
+  --primary-color: #ac2a29;
+  --primary-light: #f8f9fa;
+  --text-dark: #333;
+  --text-medium: #666;
+  --text-white: #fff;
+  --bg-light: #f8fafc;
+  --header-bg-color: rgba(255, 255, 255, 0.95);
+  --shadow-color: rgba(0, 0, 0, 0.1);
+
+  // Spacing
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 3rem;
+  --spacing-2xl: 4rem;
+  --spacing-3xl: 6rem;
+  --spacing-4xl: 8rem;
+
+  // Typography
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-md: 1rem;
+  --font-size-lg: 1.25rem;
+  --font-size-xl: 1.5rem;
+  --font-size-2xl: 2rem;
+  --font-size-3xl: 2.5rem;
+
+  // Font weights
+  --font-weight-light: 300;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+
+  // Border radius
+  --border-radius-sm: 4px;
+  --border-radius-md: 8px;
+  --border-radius-lg: 12px;
+
+  // Header
+  --header-height: 60px;
+  --header-backdrop-filter: blur(5px);
+}
