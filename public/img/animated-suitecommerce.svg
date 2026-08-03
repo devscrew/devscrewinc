@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" fill="none">
+  <g>
+    <!-- Browser Window -->
+    <rect x="24" y="28" width="80" height="72" rx="4" stroke="#2A4A7B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+      <animate attributeName="stroke-opacity" values="1;0.7;1" dur="4s" repeatCount="indefinite" />
+    </rect>
+    <path d="M24 44H104" stroke="#2A4A7B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- Browser Controls -->
+    <circle cx="34" cy="36" r="2" fill="#2A4A7B">
+      <animate attributeName="opacity" values="1;0.4;1" dur="2s" repeatCount="indefinite" begin="0s" />
+    </circle>
+    <circle cx="42" cy="36" r="2" fill="#2A4A7B">
+      <animate attributeName="opacity" values="1;0.4;1" dur="2s" repeatCount="indefinite" begin="0.2s" />
+    </circle>
+    <circle cx="50" cy="36" r="2" fill="#2A4A7B">
+      <animate attributeName="opacity" values="1;0.4;1" dur="2s" repeatCount="indefinite" begin="0.4s" />
+    </circle>
+  </g>
+
+  <!-- Shopping Cart Group -->
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0 0; 2 0; 0 0" dur="3s" repeatCount="indefinite" />
+    <!-- Cart Structure -->
+    <path d="M40 54H46L52 82H82" stroke="#ac2a29" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M49 60H88L84 74H55L49 60Z" stroke="#ac2a29" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+      <animate attributeName="stroke-dasharray" values="0,100;100,0" dur="2s" fill="freeze" />
+    </path>
+    <!-- Cart Wheel -->
+    <circle cx="58" cy="90" r="4" stroke="#ac2a29" stroke-width="3"/>
+  </g>
+
+  <!-- Customization Gear (Acting as rear wheel/engine) -->
+  <g transform="translate(78 90)">
+    <g>
+      <circle cx="0" cy="0" r="5" stroke="#ac2a29" stroke-width="3" stroke-linecap="round"/>
+      <path d="M0 -8V-5M0 8V5M8 0H5M-8 0H-5M5.6 -5.6L3.5 -3.5M-5.6 5.6L-3.5 3.5M5.6 5.6L3.5 3.5M-5.6 -5.6L-3.5 -3.5" stroke="#ac2a29" stroke-width="2.5" stroke-linecap="round"/>
+      <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="8s" repeatCount="indefinite" />
+    </g>
+  </g>
+
+  <!-- Flow/Connection Lines -->
+  <g>
+    <!-- Top Right Node -->
+    <circle cx="112" cy="44" r="4" stroke="#2A4A7B" stroke-width="3">
+      <animate attributeName="r" values="4;5;4" dur="2s" repeatCount="indefinite" />
+    </circle>
+    <path d="M104 44H108" stroke="#2A4A7B" stroke-width="3" stroke-linecap="round" stroke-dasharray="4 4">
+      <animate attributeName="stroke-dashoffset" from="8" to="0" dur="1s" repeatCount="indefinite" />
+    </path>
+
+    <!-- Bottom Left Node -->
+    <circle cx="16" cy="84" r="4" stroke="#ac2a29" stroke-width="3">
+      <animate attributeName="r" values="4;3;4" dur="2s" repeatCount="indefinite" />
+    </circle>
+    <path d="M20 84H24" stroke="#ac2a29" stroke-width="3" stroke-linecap="round" stroke-dasharray="4 4">
+      <animate attributeName="stroke-dashoffset" from="0" to="8" dur="1s" repeatCount="indefinite" />
+    </path>
+  </g>
+</svg>

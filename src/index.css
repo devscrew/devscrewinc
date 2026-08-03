@@ -150,6 +150,14 @@ img {
   transform: translateY(-5px);
 }
 
+/* Ensure animated images are responsive */
+.hero-image img,
+.feature-icon img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 /* Header styling */
 .header {
   background-color: rgba(255, 255, 255, 0.95);

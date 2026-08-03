@@ -35,8 +35,7 @@ const Home = () => {
             </div>
           </div>
           <div className="hero-image">
-            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-                 alt="NetSuite and SuiteCommerce Solutions" />
+            <img src="/img/home_hero_image.png" alt="NetSuite ERP Implementation" />
           </div>
         </div>
       </section>
@@ -68,27 +67,35 @@ const Home = () => {
 
         <div className="grid features-grid">
           <div className="feature-card">
-            <div className="feature-icon">🏆</div>
+            <div className="feature-icon">
+              <img src="/img/animated-certified.svg" alt="NetSuite Certified Experts" />
+            </div>
             <h3>NetSuite Certified Experts</h3>
             <p>Our team holds multiple NetSuite certifications and extensive implementation experience.</p>
           </div>
 
           <div className="feature-card">
-            <div className="feature-icon">🚀</div>
-            <h3>Proven Results</h3>
-            <p>Successful implementations across various industries with measurable business impact.</p>
+            <div className="feature-icon">
+              <img src="/img/animated-suitecommerce.svg" alt="SuiteCommerce Customization" />
+            </div>
+            <h3>SuiteCommerce Customization</h3>
+            <p>Customize and enhance SuiteCommerce storefronts to create unique shopping experiences.</p>
           </div>
 
           <div className="feature-card">
-            <div className="feature-icon">💡</div>
-            <h3>Custom Solutions</h3>
-            <p>Personalized approaches that align with your specific business requirements and goals.</p>
+            <div className="feature-icon">
+              <img src="/img/animated-implementation.svg" alt="Implementation Services" />
+            </div>
+            <h3>Implementation Services</h3>
+            <p>End-to-end implementation of NetSuite ERP solutions tailored to your business needs.</p>
           </div>
 
           <div className="feature-card">
-            <div className="feature-icon">🔄</div>
-            <h3>Ongoing Support</h3>
-            <p>Comprehensive support and maintenance to ensure long-term success of your platforms.</p>
+            <div className="feature-icon">
+              <img src="/img/animated-business-meeting.svg" alt="Business Meetings & Consultation" />
+            </div>
+            <h3>Consultation & Strategy</h3>
+            <p>Strategic consulting services to align technology with business goals.</p>
           </div>
         </div>
       </section>
