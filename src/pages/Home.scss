@@ -5,22 +5,33 @@
 .hero-section {
   padding-top: 10rem;
   padding-bottom: 5rem;
+  position: relative;
+  overflow: hidden;
+
+  .container & {
+    max-width: 1200px;
+  }
 }
 
 .hero-grid {
-  grid-template-columns: 1fr 1fr;
-  gap: 3rem;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 4rem;
   align-items: center;
 }
 
 @media (max-width: 768px) {
-  .hero-grid {
-    grid-template-columns: 1fr;
-    gap: 2rem;
+  .hero-section {
+    padding-top: 6rem;
+    text-align: center;
   }
 
-  .hero-content {
-    text-align: center;
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .hero-content-wrapper {
+    order: -1; // Keep content above image on mobile
   }
 }
 
@@ -48,6 +59,23 @@
 @media (max-width: 768px) {
   .hero-image {
     margin-top: 2rem;
+  }
+}
+
+/* Simplified Hero Section - Added for Home Page */
+.simple-hero-section {
+  padding: 5rem 0;
+  text-align: center;
+
+  .section-title {
+    margin-bottom: var(--spacing-xl);
+  }
+
+  .hero-description {
+    font-size: var(--font-size-lg);
+    max-width: 800px;
+    margin: 0 auto var(--spacing-xl);
+    color: var(--text-dark);
   }
 }
 
@@ -96,6 +124,7 @@
 @media (max-width: 768px) {
   .feature-icon {
     height: 80px;
+    margin-bottom: 1rem;
 
     img {
       max-width: 60px;
@@ -124,6 +153,9 @@
   text-align: center;
   padding: var(--spacing-xl);
   transition: transform 0.3s ease;
+  min-height: 350px;
+  display: flex;
+  flex-direction: column;
 
   h3 {
     margin-top: var(--spacing-md);
@@ -132,6 +164,9 @@
 
   p {
     color: var(--text-medium);
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
   }
 }
 

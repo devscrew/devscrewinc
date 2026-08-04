@@ -3,20 +3,22 @@ import './AboutUs.scss';
 const AboutUs = () => {
   return (
     <div className="container">
-      <section className="section about-section">
-        <div className="grid about-grid">
-          <div className="about-content">
+      {/* Hero Section with Image */}
+      <section className="hero-section">
+        <div className="grid hero-grid">
+          <div className="hero-content-wrapper">
             <h1 className="section-title">About DevsCrew Inc.</h1>
-            <p className="mb-4">DevsCrew Inc. is a specialized consulting firm dedicated to helping businesses leverage the power of NetSuite ERP and SuiteCommerce platforms.</p>
+            <p className="hero-description mb-4">DevsCrew Inc. is a specialized consulting firm dedicated to helping businesses leverage the power of NetSuite ERP and SuiteCommerce platforms.</p>
             <p className="mb-4">With deep expertise in NetSuite implementation, customization, and integration services, we help organizations streamline operations, enhance customer experiences, and drive business growth through technology.</p>
             <p>Our team of certified NetSuite professionals brings years of experience across various industries to ensure your platform delivers maximum value.</p>
           </div>
-          <div className="about-image">
-            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-                 alt="NetSuite Consulting Team" />
+          <div className="hero-image-wrapper">
+            <img src="/img/home_hero_image.png" alt="NetSuite Consulting Team" />
           </div>
         </div>
+      </section>
 
+      <section className="section about-section">
         <div className="text-center mb-8">
           <h2 className="section-title">Our Expertise</h2>
           <p>Specializing in NetSuite ERP and SuiteCommerce solutions across multiple industries.</p>
