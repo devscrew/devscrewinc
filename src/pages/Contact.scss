@@ -11,6 +11,20 @@
   gap: 3rem;
 }
 
+.contact-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.form-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
 .contact-info {
   h2 {
     color: var(--primary-color);
@@ -24,7 +38,53 @@
   }
 
   .contact-item {
+    margin-bottom: var(--spacing-md);
+  }
+
+  .contact-label {
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-bottom: var(--spacing-xs);
+  }
+
+  .contact-link {
+    color: var(--primary-color);
+    text-decoration: none;
+    display: block;
+    margin-bottom: var(--spacing-xs);
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .contact-text {
+    color: var(--text-medium);
+  }
+}
+
+.business-hours {
+  h3 {
+    margin-bottom: var(--spacing-md);
+  }
+
+  .hours-item {
+    display: flex;
+    justify-content: space-between;
     margin-bottom: var(--spacing-sm);
+    padding-bottom: var(--spacing-sm);
+    border-bottom: 1px solid #f0f0f0;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  .days {
+    color: var(--text-dark);
+  }
+
+  .time {
     color: var(--text-medium);
   }
 }
@@ -51,10 +111,26 @@
     margin-bottom: var(--spacing-md);
   }
 
+  .form-description {
+    color: var(--text-medium);
+    font-size: 0.9rem;
+  }
+
   .contact-form-elements {
     display: flex;
     flex-direction: column;
     gap: var(--spacing-md);
+  }
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+
+    label {
+      margin-bottom: var(--spacing-xs);
+      font-weight: 600;
+      color: var(--text-dark);
+    }
   }
 
   .form-input,
@@ -63,6 +139,13 @@
     border-radius: var(--border-radius-md);
     border: 1px solid #e5e7eb;
     font-size: 1rem;
+    transition: border-color 0.3s ease;
+
+    &:focus {
+      outline: none;
+      border-color: var(--primary-color);
+      box-shadow: 0 0 0 3px rgba(172, 42, 41, 0.1);
+    }
   }
 
   .form-textarea {
@@ -75,5 +158,24 @@
     background-color: var(--primary-color);
     color: white;
     border: none;
+    padding: 0.75rem 2rem;
+    font-weight: 600;
+
+    &:hover {
+      background-color: #8a2221;
+      transform: translateY(-2px);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .contact-card,
+  .form-card {
+    padding: 1.5rem;
   }
 }

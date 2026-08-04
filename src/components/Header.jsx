@@ -10,20 +10,28 @@ const Header = () => {
     <header className="header">
       <div className="header-container">
         <div className="header-logo">
-          {/* Logo/Icon placeholder - you can replace with actual icon */}
           <div className="logo-icon">
             <img src="/img/logo.png" alt="DevsCrew Inc. Logo" />
           </div>
           <Link to="/" className="logo-text">DevsCrew Inc.</Link>
         </div>
 
-        <nav className="header-nav">
+        <button
+          className="mobile-menu-toggle"
+          onClick={() => setIsOpen(!isOpen)}
+          aria-label="Toggle menu"
+        >
+          <span className={`hamburger ${isOpen ? 'active' : ''}`}></span>
+        </button>
+
+        <nav className={`header-nav ${isOpen ? 'open' : ''}`}>
           <div className="nav-links">
             {navItems.map((item) => (
               <Link
                 key={item.path}
                 to={item.path}
                 className="nav-link"
+                onClick={() => setIsOpen(false)}
               >
                 {item.label}
               </Link>
