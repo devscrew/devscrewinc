@@ -1,10 +1,53 @@
 import { useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './Header.scss';
+// Importing JS config
+import menuConfig from '../config/menuConfig.js';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const navItems = [{path:'/',label:'Home'},{path:'/about',label:'About Us'},{path:'/services',label:'Services'},{path:'/contact',label:'Contact'}];
+  const [openDropdowns, setOpenDropdowns] = useState({});
+
+  // Function to handle dropdown toggle
+  const toggleDropdown = (path) => {
+    setOpenDropdowns(prev => ({
+      ...prev,
+      [path]: !prev[path]
+    }));
+  };
+
+  // Function to render nested menu items recursively
+  const renderMenuItems = (items, level = 0) => {
+    return items.map((item) => (
+      <div key={item.path} className="nav-item">
+        {item.submenu ? (
+          <div className="dropdown-container">
+            <button
+              className="nav-link dropdown-toggle"
+              onClick={(e) => {
+                e.preventDefault();
+                toggleDropdown(item.path);
+              }}
+            >
+              {item.label}
+            </button>
+            <div className={`dropdown-menu ${openDropdowns[item.path] ? 'open' : ''}`}>
+              {renderMenuItems(item.submenu, level + 1)}
+            </div>
+          </div>
+        ) : (
+          <Link
+            key={item.path}
+            to={item.path}
+            className="nav-link"
+            onClick={() => setIsOpen(false)}
+          >
+            {item.label}
+          </Link>
+        )}
+      </div>
+    ));
+  };
 
   return (
     <header className="header">
@@ -26,16 +69,7 @@ const Header = () => {
 
         <nav className={`header-nav ${isOpen ? 'open' : ''}`}>
           <div className="nav-links">
-            {navItems.map((item) => (
-              <Link
-                key={item.path}
-                to={item.path}
-                className="nav-link"
-                onClick={() => setIsOpen(false)}
-              >
-                {item.label}
-              </Link>
-            ))}
+            {renderMenuItems(menuConfig.menu)}
           </div>
         </nav>
       </div>

@@ -183,6 +183,88 @@
           background-color: var(--primary-light);
         }
       }
+
+      .dropdown-container {
+        position: relative;
+
+        .dropdown-toggle {
+          display: flex;
+          align-items: center;
+          gap: 0.25rem;
+          background: none;
+          border: none;
+          cursor: pointer;
+          font-weight: var(--font-weight-medium);
+          color: var(--text-medium);
+          padding: 0.5rem 0.75rem;
+          border-radius: var(--border-radius-sm);
+          transition: all 0.3s ease;
+
+          &:hover {
+            color: var(--primary-color);
+            background-color: var(--primary-light);
+          }
+
+          &::after {
+            content: "▼";
+            font-size: 0.75rem;
+            transform: scale(0.8);
+          }
+        }
+
+        .dropdown-menu {
+          position: absolute;
+          top: 100%;
+          left: 0;
+          background-color: var(--header-bg-color);
+          backdrop-filter: var(--header-backdrop-filter);
+          min-width: 250px;
+          box-shadow: 0 4px 6px var(--shadow-color);
+          border-radius: var(--border-radius-sm);
+          padding: 0.5rem 0;
+          opacity: 0;
+          visibility: hidden;
+          transform: translateY(-10px);
+          transition: all 0.3s ease;
+          z-index: 1000;
+
+          &.open {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+          }
+
+          .dropdown-link {
+            display: block;
+            padding: 0.75rem 1rem;
+            color: var(--text-medium);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border-radius: 0;
+
+            &:hover {
+              color: var(--primary-color);
+              background-color: var(--primary-light);
+            }
+          }
+
+          // Nested dropdown support
+          .dropdown-menu {
+            top: 0;
+            left: 100%;
+            margin-left: 0;
+            margin-top: -0.5rem;
+
+            &.open {
+              transform: translateX(0);
+            }
+          }
+        }
+      }
+
+      .nav-item {
+        position: relative;
+      }
     }
   }
 }

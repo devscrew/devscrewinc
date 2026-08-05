@@ -159,9 +159,9 @@ img {
 }
 
 .btn-secondary {
-  background-color: transparent;
-  border: var(--border-width-2) solid var(--primary-color);
-  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  border: var(--border-width-2) solid var(--secondary-color);
+  color: #fff;
   padding: var(--btn-padding-md);
 }
 

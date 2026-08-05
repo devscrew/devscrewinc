@@ -41,7 +41,7 @@ const Footer = () => {
             <ul className="footer-list">
               <li><a href="/about" className="footer-link">About Us</a></li>
               <li><a href="/contact" className="footer-link">Contact</a></li>
-              <li><a href="/careers" className="footer-link">Careers</a></li>
+              {/* <li><a href="/careers" className="footer-link">Careers</a></li> */}
               <li><a href="/blog" className="footer-link">Blog</a></li>
             </ul>
           </div>
@@ -49,10 +49,10 @@ const Footer = () => {
           <div className="footer-column footer-contact">
             <h4 className="footer-heading">Contact</h4>
             <address className="footer-address">
-              <p className="contact-info">123 Business Avenue</p>
-              <p className="contact-info">San Francisco, CA 94107</p>
+              <p className="contact-info">A2 Building</p>
+              <p className="contact-info">Silicon Oasis, Dubai, UAE</p>
               <p className="contact-info">info@devscrew.com</p>
-              <p className="contact-info">(555) 123-4567</p>
+              <p className="contact-info">+971 (056) 426-1606</p>
             </address>
           </div>
         </div>
