@@ -62,22 +62,20 @@ const Home = () => {
   ];
 
   const openModal = (feature) => {
-    console.log('Opening modal for feature:', feature.title);
     setSelectedFeature(feature);
     setIsModalOpen(true);
   };
 
   const closeModal = () => {
-    console.log('Closing modal');
     setIsModalOpen(false);
   };
 
   return (
     <div className="app">
-      {/* Hero Section with Full Width Background */}
-      <section className="hero-section hero-section--home">
-        <div className="container">
-          <div className="text-center mb-8">
+      {/* Hero Section with Two-Column Layout */}
+      <section className="hero-section--home">
+        <div className="container hero-grid">
+          <div className="hero-content-wrapper">
             <h1 className="section-title">NetSuite ERP & SuiteCommerce Solutions</h1>
             <p className="hero-description mb-4">DevsCrew Inc. is a specialized consulting firm dedicated to helping businesses leverage the power of NetSuite ERP and SuiteCommerce platforms.</p>
             <p className="mb-4">With deep expertise in NetSuite implementation, customization, and integration services, we help organizations streamline operations, enhance customer experiences, and drive business growth through technology.</p>
@@ -86,6 +84,9 @@ const Home = () => {
               <Link to="/contact" className="btn btn-primary">Schedule a Consultation</Link>
               <Link to="/services" className="btn btn-secondary">Our Services</Link>
             </div>
+          </div>
+          <div className="hero-image-wrapper">
+            <img src="/img/homepage-banner.png" alt="NetSuite ERP and SuiteCommerce Solutions" />
           </div>
         </div>
       </section>
@@ -125,7 +126,6 @@ const Home = () => {
                 className="feature-card"
                 onClick={(e) => {
                   e.stopPropagation();
-                  console.log('Feature card clicked:', feature.title);
                   openModal(feature);
                 }}
                 style={{ cursor: 'pointer' }}
@@ -142,7 +142,7 @@ const Home = () => {
       </section>
 
       {/* Testimonials Section */}
-      <section className="section testimonials-section">
+      {/* <section className="section testimonials-section">
         <div className="container">
           <div className="text-center mb-8">
             <p className="section-subtitle">CLIENT TESTIMONIALS</p>
@@ -171,7 +171,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Call to Action */}
       <section className="section cta-section">

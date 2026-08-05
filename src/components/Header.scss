@@ -120,6 +120,7 @@
             transition: all 0.3s ease;
             border-radius: var(--border-radius-sm);
             font-weight: var(--font-weight-medium); // Make all menu items consistent
+            color: var(--text-medium); // Ensure proper text color
 
             &.active {
               color: var(--primary-color);
@@ -140,25 +141,34 @@
               display: flex;
               align-items: center;
               justify-content: space-between;
-              width: 100%;
+              width: 90%;
+              max-width: 320px;
               padding: 0.75rem 1rem;
               font-size: var(--font-size-lg);
-              background: none;
-              border: none;
+              background-color: transparent;
+              border-radius: var(--border-radius-sm);
+              margin: 0 auto;
               cursor: pointer;
               text-align: left;
               transition: all 0.3s ease;
-              font-weight: var(--font-weight-medium); // Make consistent with nav links
+              font-weight: var(--font-weight-medium);
+              color: var(--text-medium);
 
               &::after {
                 content: "▼";
-                transform: scale(0.8);
+                transform: scale(0.8) rotate(-180deg);
                 transition: transform 0.3s ease;
               }
 
+              &:hover,
+              .dropdown-container:hover &,
               &.active {
+                background-color: var(--primary-light);
+                color: var(--primary-color);
+                font-weight: var(--font-weight-bold);
+
                 &::after {
-                  transform: rotate(180deg);
+                  transform: scale(0.8) rotate(180deg);
                 }
               }
             }
@@ -184,7 +194,7 @@
               .dropdown-link {
                 display: block;
                 padding: 0.75rem 2rem;
-                color: var(--text-medium);
+                color: var(--text-medium); // Fix: Ensure proper text color for submenu items
                 text-decoration: none;
                 transition: all 0.3s ease;
                 border-radius: 0;
@@ -220,6 +230,7 @@
                 .dropdown-link {
                   padding: 0.75rem 3rem;
                   font-size: var(--font-size-md); // Slightly smaller for nested items
+                  color: var(--text-medium); // Fix: Ensure proper text color for nested submenu items
                 }
               }
             }
@@ -354,7 +365,7 @@
           .dropdown-link {
             display: block;
             padding: 0.75rem 1rem;
-            color: var(--text-medium);
+            color: var(--text-medium); // Ensure proper text color for dropdown items
             text-decoration: none;
             transition: all 0.3s ease;
             border-radius: 0;

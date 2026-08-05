@@ -6,9 +6,12 @@
   --accent-color: #f59e0b;
   --text-dark: #1f2937;
   --text-light: #6b7280;
+  --text-medium: #374151; /* Added missing text-medium variable */
+  --header-bg-color: rgba(255, 255, 255, 0.95); /* Better header background for contrast */
   --bg-white: #ffffff;
   --bg-gray: #f9fafb;
   --border-color: #e5e7eb;
+  --shadow-color: rgba(0,0,0,0.1);
 }
 
 * {

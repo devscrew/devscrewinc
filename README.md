@@ -34,6 +34,7 @@ src/
 - Clean, maintainable SCSS structure with reusable components
 - Mobile-friendly navigation and layout
 - Consistent color scheme and typography
+- Fixed header dropdown menu functionality for both mobile and desktop
 
 ## Development
 
@@ -42,6 +43,13 @@ src/
 - `npm run dev` - Start development server
 - `npm run build` - Build for production
 - `npm run preview` - Preview production build
+
+### Header Menu Notes
+
+The header dropdown menus have been fixed to work properly on both mobile and desktop:
+- Mobile users can toggle nested dropdowns with clicks
+- Desktop users get hover-based dropdown functionality  
+- All menu items maintain consistent styling across devices
 
 ### Dependencies
 

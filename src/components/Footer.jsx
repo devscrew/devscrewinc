@@ -11,13 +11,13 @@ const Footer = () => {
               Expert NetSuite and SuiteCommerce implementation, customization, and integration services.
             </p>
             <div className="footer-social">
-              <a href="#" className="social-link" aria-label="Facebook">
+              <a href="https://www.facebook.com/crewdevs/" className="social-link" aria-label="Facebook">
                 <span className="social-icon">f</span>
               </a>
               <a href="#" className="social-link" aria-label="Twitter">
                 <span className="social-icon">t</span>
               </a>
-              <a href="#" className="social-link" aria-label="LinkedIn">
+              <a href="https://www.linkedin.com/company/devs-crew-inc" className="social-link" aria-label="LinkedIn">
                 <span className="social-icon">in</span>
               </a>
               <a href="#" className="social-link" aria-label="Instagram">
