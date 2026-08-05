@@ -1,0 +1,131 @@
+// ==========================================
+// Color Variables
+// ==========================================
+
+// Primary color palette
+$primary-color: #ac2a29;
+$primary-dark: #8a2221;
+$primary-light: #f8e6e6;
+
+// Secondary color palette
+$secondary-color: #2A4A7B;
+$secondary-dark: #1a305d;
+$secondary-light: #d1dce9;
+
+// Accent colors
+$accent-color: #f59e0b;
+$accent-dark: #d97706;
+$accent-light: #fef3c7;
+
+// Text colors
+$text-dark: #1f2937;
+$text-medium: #374151;
+$text-light: #6b7280;
+$text-white: #ffffff;
+
+// Background colors
+$bg-white: #ffffff;
+$bg-gray: #f9fafb;
+$bg-light: #f8fafc;
+$bg-dark: #111827;
+
+// Border and shadow colors
+$border-color: #e5e7eb;
+$shadow-color: rgba(0, 0, 0, 0.05);
+$shadow-color-dark: rgba(0, 0, 0, 0.1);
+
+// ==========================================
+// Spacing Variables
+// ==========================================
+
+$spacing-xs: 0.25rem;
+$spacing-sm: 0.5rem;
+$spacing-md: 1rem;
+$spacing-lg: 1.5rem;
+$spacing-xl: 2rem;
+$spacing-2xl: 3rem;
+$spacing-3xl: 4rem;
+$spacing-4xl: 5rem;
+
+// ==========================================
+// Typography Variables
+// ==========================================
+
+$font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+$font-size-xs: 0.75rem;
+$font-size-sm: 0.875rem;
+$font-size-base: 1rem;
+$font-size-lg: 1.125rem;
+$font-size-xl: 1.25rem;
+$font-size-2xl: 1.5rem;
+$font-size-3xl: 2rem;
+$font-size-4xl: 2.5rem;
+
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+
+// ==========================================
+// Breakpoints
+// ==========================================
+
+$breakpoint-xs: 320px;
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 1024px;
+$breakpoint-xl: 1280px;
+$breakpoint-2xl: 1536px;
+
+// ==========================================
+// Border Variables
+// ==========================================
+
+$border-radius-sm: 0.25rem;
+$border-radius-md: 0.5rem;
+$border-radius-lg: 1rem;
+$border-radius-xl: 1.5rem;
+$border-radius-full: 9999px;
+
+$border-width: 1px;
+$border-width-2: 2px;
+
+// ==========================================
+// Shadow Variables
+// ==========================================
+
+$shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
+$shadow-md: 0 4px 6px rgba(0, 0, 0, 0.05);
+$shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.05);
+$shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.1);
+$shadow-2xl: 0 25px 50px rgba(0, 0, 0, 0.1);
+
+// ==========================================
+// Transition Variables
+// ==========================================
+
+$transition-base: all 0.3s ease;
+$transition-fast: all 0.2s ease;
+$transition-slow: all 0.5s ease;
+
+// ==========================================
+// Button Variables
+// ==========================================
+
+$btn-padding-xs: 0.25rem 0.5rem;
+$btn-padding-sm: 0.5rem 1rem;
+$btn-padding-md: 0.75rem 1.5rem;
+$btn-padding-lg: 1rem 2rem;
+
+$btn-font-size-sm: 0.875rem;
+$btn-font-size-md: 1rem;
+$btn-font-size-lg: 1.125rem;
+
+// ==========================================
+// Header and Footer Variables
+// ==========================================
+
+$header-height: 64px;
+$header-bg-color: rgba(255, 255, 255, 0.95);
+$header-backdrop-filter: blur(10px);
