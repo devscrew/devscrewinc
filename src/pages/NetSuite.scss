@@ -1,0 +1,46 @@
+@import '../assets/scss/index.scss';
+
+// NetSuite Page Styles
+.hero-section--netsuite {
+  background: linear-gradient(135deg, #2A4A7B 0%, #1a305d 100%);
+  color: white;
+  padding: var(--spacing-4xl) 0;
+
+  .section-title {
+    color: white;
+  }
+
+  .hero-description {
+    color: rgba(255, 255, 255, 0.9);
+    max-width: 700px;
+    margin: 0 auto 2rem;
+  }
+}
+
+.services-section {
+  background-color: var(--bg-light);
+}
+
+.features-section {
+  background-color: var(--bg-white);
+}
+
+.cta-section {
+  background: linear-gradient(135deg, #ac2a29 0%, #8a2221 100%);
+  color: white;
+
+  .section-title {
+    color: white;
+  }
+
+  .btn-secondary {
+    background-color: transparent;
+    border: var(--border-width-2) solid white;
+    color: white;
+  }
+
+  .btn-secondary:hover {
+    background-color: white;
+    color: var(--primary-color);
+  }
+}

@@ -1,0 +1,219 @@
+// ==========================================
+// First Blog Post Detail Styles
+// ==========================================
+
+.blog-post-detail {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.blog-post-detail-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.blog-post-detail-title {
+  font-size: var(--font-size-xxl);
+  margin-bottom: var(--spacing-md);
+  color: var(--text-primary);
+}
+
+.blog-post-detail-meta {
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-lg);
+  flex-wrap: wrap;
+  margin-bottom: var(--spacing-lg);
+  color: var(--text-secondary);
+  font-size: var(--font-size-sm);
+}
+
+.blog-post-intro {
+  font-size: var(--font-size-lg);
+  line-height: 1.8;
+  color: var(--text-secondary);
+  margin-bottom: var(--spacing-xl);
+  font-style: italic;
+}
+
+.blog-post-content {
+  line-height: 1.8;
+
+  h1, h2, h3 {
+    color: var(--text-primary);
+    margin-top: 2rem;
+    margin-bottom: var(--spacing-md);
+  }
+
+  h1 {
+    font-size: var(--font-size-xl);
+  }
+
+  h2 {
+    font-size: var(--font-size-lg);
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 0.5rem;
+  }
+
+  h3 {
+    font-size: var(--font-size-md);
+  }
+
+  p {
+    margin-bottom: var(--spacing-md);
+  }
+
+  ul, ol {
+    margin-bottom: var(--spacing-md);
+    padding-left: 1.5rem;
+  }
+
+  li {
+    margin-bottom: var(--spacing-xs);
+  }
+
+  .blog-post-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--border-radius);
+    margin: 1.5rem 0;
+    box-shadow: var(--box-shadow);
+  }
+}
+
+.blog-post-tags {
+  margin: 2rem 0;
+  padding: 1rem 0;
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.tag {
+  display: inline-block;
+  background: var(--primary-color-light);
+  color: var(--primary-color);
+  padding: 0.25rem 0.75rem;
+  border-radius: 15px;
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  margin-right: var(--spacing-sm);
+  margin-bottom: var(--spacing-sm);
+}
+
+.blog-post-share {
+  margin: 2rem 0;
+  padding: 1rem 0;
+  border-top: 1px solid var(--border-color);
+}
+
+.blog-post-share p {
+  margin-bottom: var(--spacing-md);
+  font-weight: var(--font-weight-medium);
+}
+
+.social-share-buttons {
+  display: flex;
+  gap: var(--spacing-sm);
+}
+
+.share-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--bg-light);
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: var(--font-size-md);
+
+  &:hover {
+    background: var(--primary-color);
+    color: var(--text-white);
+    transform: translateY(-2px);
+  }
+
+  &.twitter:hover {
+    background: #1DA1F2;
+  }
+
+  &.linkedin:hover {
+    background: #0077B5;
+  }
+
+  &.facebook:hover {
+    background: #4267B2;
+  }
+}
+
+.blog-post-related {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.blog-post-related h3 {
+  font-size: var(--font-size-lg);
+  margin-bottom: var(--spacing-md);
+  color: var(--text-primary);
+}
+
+.related-posts-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.related-post-card {
+  padding: 1rem;
+  border-radius: var(--border-radius);
+  background: var(--bg-light);
+  text-decoration: none;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background: var(--bg-white);
+    box-shadow: var(--box-shadow-hover);
+    transform: translateY(-2px);
+  }
+}
+
+.related-post-card h4 {
+  margin-bottom: var(--spacing-sm);
+  color: var(--text-primary);
+}
+
+.related-post-excerpt {
+  color: var(--text-secondary);
+  font-size: var(--font-size-sm);
+  line-height: 1.6;
+}
+
+// Responsive Design
+@media (max-width: 768px) {
+  .blog-post-detail {
+    padding: 0 0.5rem;
+  }
+
+  .blog-post-detail-title {
+    font-size: var(--font-size-xl);
+  }
+
+  .blog-post-detail-meta {
+    flex-direction: column;
+    gap: var(--spacing-xs);
+    align-items: center;
+  }
+
+  .social-share-buttons {
+    justify-content: center;
+  }
+
+  .blog-post-related h3 {
+    text-align: center;
+  }
+}
