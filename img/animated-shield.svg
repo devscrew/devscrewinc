@@ -1,0 +1,22 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    @keyframes sweep { 0% { transform: translateX(-150px) skewX(-20deg); } 100% { transform: translateX(250px) skewX(-20deg); } }
+    .shield-base { fill: #2A4A7B; }
+    .accent { fill: #ac2a29; }
+    .shimmer { animation: sweep 3s infinite; fill: white; opacity: 0.2; }
+  </style>
+  <defs>
+    <clipPath id="shieldClip">
+      <path d="M100 25 L40 50 V100 C40 140 65 170 100 180 C135 170 160 140 160 100 V50 L100 25Z" />
+    </clipPath>
+  </defs>
+  <!-- Shadow -->
+  <path d="M100 30 L45 55 V100 C45 135 68 165 100 175 C132 165 155 135 155 100 V55 L100 30Z" fill="#000" opacity="0.1" />
+  <!-- Main Shield -->
+  <path class="shield-base" d="M100 25 L40 50 V100 C40 140 65 170 100 180 C135 170 160 140 160 100 V50 L100 25Z" />
+  <!-- Shimmer Effect -->
+  <rect class="shimmer" x="0" y="0" width="60" height="200" clip-path="url(#shieldClip)" />
+  <!-- Checkmark -->
+  <path d="M70 100 L90 120 L135 75" stroke="#ac2a29" stroke-width="12" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M70 100 L90 120 L135 75" stroke="white" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+</svg>

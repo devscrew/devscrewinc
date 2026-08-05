@@ -1,0 +1,20 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    @keyframes alert { 0%, 80%, 100% { transform: rotate(0deg); } 85% { transform: rotate(3deg); } 95% { transform: rotate(-3deg); } }
+    @keyframes time { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+    .cal-top { fill: #ac2a29; }
+    .cal-base { fill: #f8f9fa; stroke: #2A4A7B; stroke-width: 2; }
+    .clock-hand { animation: time 12s linear infinite; transform-origin: 140px 140px; stroke: #2A4A7B; }
+    .shake-group { animation: alert 4s infinite; transform-origin: center; }
+  </style>
+  <g class="shake-group">
+    <rect class="cal-base" x="40" y="40" width="120" height="120" rx="10" />
+    <path class="cal-top" d="M40 50c0-5.5 4.5-10 10-10h100c5.5 0 10 4.5 10 10v30H40V50z" />
+    <rect x="60" y="30" width="10" height="20" rx="4" fill="#2A4A7B" />
+    <rect x="130" y="30" width="10" height="20" rx="4" fill="#2A4A7B" />
+    <!-- Clock element -->
+    <circle cx="140" cy="140" r="22" fill="white" stroke="#2A4A7B" stroke-width="3" />
+    <line class="clock-hand" x1="140" y1="140" x2="140" y2="125" stroke-width="3" stroke-linecap="round" />
+    <circle cx="140" cy="140" r="2" fill="#2A4A7B" />
+  </g>
+</svg>

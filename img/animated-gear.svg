@@ -1,0 +1,12 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    @keyframes spin-cw { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+    @keyframes spin-ccw { from { transform: rotate(360deg); } to { transform: rotate(0deg); } }
+    .gear-blue { animation: spin-cw 10s linear infinite; transform-origin: 75px 85px; fill: #2A4A7B; }
+    .gear-red { animation: spin-ccw 5s linear infinite; transform-origin: 130px 135px; fill: #ac2a29; }
+  </style>
+  <!-- Large Gear -->
+  <path class="gear-blue" d="M110 85c0-3.8-.7-7.5-2.1-11l9.1-8.5-10-10-10.7 5.2c-5.1-3.6-10.8-6.1-17.1-7.2l-3.3-13.5h-14.1l-3.3 13.5c-6.3 1.1-12 3.6-17.1 7.2l-10.7-5.2-10 10 9.1 8.5c-1.4 3.5-2.1 7.2-2.1 11l-12.8 4.2v14.1l12.8 4.2c1.4 3.8 2.1 7.5 2.1 11l-9.1 8.5 10 10 10.7-5.2c5.1 3.6 10.8 6.1 17.1 7.2l3.3 13.5h14.1l3.3-13.5c6.3-1.1 12-3.6 17.1-7.2l10.7 5.2 10-10-9.1-8.5c1.4-3.5 2.1-7.2 2.1-11l12.8-4.2v-14.1l-12.8-4.2zM75 105c-11 0-20-9-20-20s9-20 20-20 20 9 20 20-9 20-20 20z"/>
+  <!-- Small Gear -->
+  <path class="gear-red" d="M155 135c0-2.3-.4-4.5-1.1-6.6l5.5-5.1-6-6-6.4 3.1c-3.1-2.2-6.5-3.7-10.3-4.3l-2-8.1h-8.5l-2 8.1c-3.8.6-7.2 2.1-10.3 4.3l-6.4-3.1-6 6 5.5 5.1c-.7 2.1-1.1 4.3-1.1 6.6l-7.7 2.5v8.5l7.7 2.5c.7 2.3.4 4.5 1.1 6.6l-5.5 5.1 6 6 6.4-3.1c3.1 2.2 6.5 3.7 10.3 4.3l2 8.1h8.5l2-8.1c3.8-.6 7.2-2.1 10.3-4.3l6.4 3.1 6-6-5.5-5.1c.7-2.1 1.1-4.3 1.1-6.6l7.7-2.5v-8.5l-7.7-2.5zM130 145c-5.5 0-10-4.5-10-10s4.5-10 10-10 10 4.5 10 10-4.5 10-10 10z"/>
+</svg>
