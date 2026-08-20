@@ -54,8 +54,35 @@
   }
 }
 
-.services-section {
+.stats-section {
   background-color: var(--bg-light);
+  padding: 4rem 0;
+
+  .stats-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--spacing-xl);
+    text-align: center;
+  }
+
+  .stat-card {
+    padding: var(--spacing-lg);
+
+    .stat-number {
+      font-size: 3rem;
+      color: var(--primary-color);
+      margin-bottom: var(--spacing-md);
+    }
+
+    .stat-label {
+      font-size: var(--font-size-md);
+      color: var(--text-medium);
+      margin: 0;
+    }
+  }
+}
+
+.services-section {
+  background-color: var(--bg-white);
 }
 
 .services-grid {
@@ -73,7 +100,7 @@
 }
 
 .features-section {
-  background-color: #fff;
+  background-color: var(--bg-light);
 }
 
 .features-grid {
@@ -133,120 +160,55 @@
   transform: translateY(-5px);
 }
 
-.cta-section {
-  background-color: var(--bg-light);
-  color: var(--text-dark);
-  text-align: center;
-  padding: 5rem 2rem;
+.testimonials-section {
+  background-color: var(--bg-white);
+  padding: 5rem 0;
 
-  .section-title {
-    color: var(--text-dark);
+  .testimonials-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-xl);
   }
 
-  .mb-4 {
-    font-size: var(--font-size-xl);
-    max-width: 700px;
-    margin: 0 auto;
-    color: var(--text-dark);
-  }
-}
+  .testimonial-card {
+    background-color: var(--bg-light);
+    padding: var(--spacing-xl);
+    border-radius: var(--border-radius-lg);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
 
-.cta-content {
-  h2 {
-    margin-bottom: var(--spacing-md);
-  }
+    .testimonial-content {
+      margin-bottom: var(--spacing-md);
 
-  p {
-    margin-bottom: var(--spacing-xl);
-  }
+      p {
+        font-style: italic;
+        color: var(--text-dark);
+        position: relative;
 
-}
+        &::before {
+          content: "";
+          font-size: 4rem;
+          position: absolute;
+          left: -20px;
+          top: -30px;
+          opacity: 0.2;
+        }
+      }
+    }
 
-.cta-button {
-  .btn-primary {
-    margin-right: 10px;
-  }
-}
+    .testimonial-author {
+      h4 {
+        margin: 0 0 var(--spacing-xs) 0;
+        color: var(--primary-color);
+      }
 
-.services-section {
-  background-color: var(--bg-light);
-}
-
-.services-grid {
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: var(--spacing-xl);
-}
-
-.service-title {
-  color: var(--primary-color);
-  margin-bottom: var(--spacing-md);
-}
-
-.service-description {
-  color: var(--text-medium);
-}
-
-.features-section {
-  background-color: #fff;
-}
-
-.features-grid {
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: var(--spacing-xl);
-}
-
-.feature-icon {
-  font-size: 3rem;
-  color: var(--primary-color);
-  margin-bottom: var(--spacing-md);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100px;
-
-  img {
-    max-width: 80px;
-    max-height: 80px;
-  }
-}
-
-@media (max-width: 768px) {
-  .feature-icon {
-    height: 80px;
-    margin-bottom: 1rem;
-
-    img {
-      max-width: 60px;
-      max-height: 60px;
+      p {
+        margin: 0;
+        color: var(--text-medium);
+        font-size: var(--font-size-sm);
+      }
     }
   }
 }
 
-.feature-card {
-  text-align: center;
-  padding: var(--spacing-xl);
-  transition: transform 0.3s ease;
-  min-height: 350px;
-  display: flex;
-  flex-direction: column;
-
-  h3 {
-    margin-top: var(--spacing-md);
-    margin-bottom: var(--spacing-md);
-  }
-
-  p {
-    color: var(--text-medium);
-    flex-grow: 1;
-    display: flex;
-    align-items: center;
-  }
-}
-
-.feature-card:hover {
-  transform: translateY(-5px);
-}
-
 .cta-section {
   background-color: var(--bg-light);
   color: var(--text-dark);
@@ -280,4 +242,37 @@
   .btn-primary {
     margin-right: 10px;
   }
+}
+
+.section-subtitle {
+  color: var(--primary-color);
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: var(--spacing-xs);
+  display: block;
+}
+
+.section-title {
+  font-size: var(--font-size-xxl);
+  margin-bottom: var(--spacing-md);
+  color: var(--text-dark);
+
+  @media (max-width: 768px) {
+    font-size: var(--font-size-xl);
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mb-4 {
+  margin-bottom: var(--spacing-xl);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
 }

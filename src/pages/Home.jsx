@@ -61,6 +61,31 @@ const Home = () => {
     }
   ];
 
+  const testimonials = [
+    {
+      quote: "DevsCrew Inc. transformed our ERP system implementation. Their expertise in NetSuite helped us streamline our operations and reduce costs by 30%.",
+      author: "Michael Johnson",
+      position: "CTO, TechSolutions Inc."
+    },
+    {
+      quote: "The SuiteCommerce customization they provided created a shopping experience that increased our conversion rate by 45% and improved customer satisfaction scores.",
+      author: "Sarah Williams",
+      position: "Marketing Director, RetailPlus"
+    },
+    {
+      quote: "Their team's deep understanding of NetSuite's capabilities helped us implement a solution that perfectly matched our business requirements. The ongoing support has been exceptional.",
+      author: "David Chen",
+      position: "Operations Manager, GlobalRetail"
+    }
+  ];
+
+  const stats = [
+    { number: "500+", label: "Projects Completed" },
+    { number: "98%", label: "Client Satisfaction" },
+    { number: "20+", label: "NetSuite Certifications" },
+    { number: "15+", label: "Industry Experts" }
+  ];
+
   const openModal = (feature) => {
     setSelectedFeature(feature);
     setIsModalOpen(true);
@@ -87,6 +112,20 @@ const Home = () => {
           </div>
           <div className="hero-image-wrapper">
             <img src="/img/homepage-banner.png" alt="NetSuite ERP and SuiteCommerce Solutions" />
+          </div>
+        </div>
+      </section>
+
+      {/* Stats Section */}
+      <section className="section stats-section">
+        <div className="container">
+          <div className="grid stats-grid">
+            {stats.map((stat, index) => (
+              <div key={index} className="stat-card">
+                <h2 className="stat-number">{stat.number}</h2>
+                <p className="stat-label">{stat.label}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -142,7 +181,7 @@ const Home = () => {
       </section>
 
       {/* Testimonials Section */}
-      {/* <section className="section testimonials-section">
+      <section className="section testimonials-section">
         <div className="container">
           <div className="text-center mb-8">
             <p className="section-subtitle">CLIENT TESTIMONIALS</p>
@@ -151,27 +190,20 @@ const Home = () => {
           </div>
 
           <div className="grid testimonials-grid">
-            <div className="testimonial-card">
-              <div className="testimonial-content">
-                <p>"DevsCrew Inc. transformed our ERP system implementation. Their expertise in NetSuite helped us streamline our operations and reduce costs by 30%."</p>
+            {testimonials.map((testimonial, index) => (
+              <div key={index} className="testimonial-card">
+                <div className="testimonial-content">
+                  <p>"{testimonial.quote}"</p>
+                </div>
+                <div className="testimonial-author">
+                  <h4>{testimonial.author}</h4>
+                  <p>{testimonial.position}</p>
+                </div>
               </div>
-              <div className="testimonial-author">
-                <h4>Michael Johnson</h4>
-                <p>CTO, TechSolutions Inc.</p>
-              </div>
-            </div>
-            <div className="testimonial-card">
-              <div className="testimonial-content">
-                <p>"The SuiteCommerce customization they provided created a shopping experience that increased our conversion rate by 45% and improved customer satisfaction scores."</p>
-              </div>
-              <div className="testimonial-author">
-                <h4>Sarah Williams</h4>
-                <p>Marketing Director, RetailPlus</p>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
-      </section> */}
+      </section>
 
       {/* Call to Action */}
       <section className="section cta-section">
