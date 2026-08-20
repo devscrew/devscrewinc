@@ -5,7 +5,12 @@ import Home from './pages/Home';
 import AboutUs from './pages/AboutUs';
 import Services from './pages/Services';
 import NetSuite from './pages/NetSuite';
+import NetSuiteImplementation from './pages/NetSuiteImplementation';
+import NetSuiteCustomization from './pages/NetSuiteCustomization';
+import NetSuiteIntegration from './pages/NetSuiteIntegration';
 import SuiteCommerce from './pages/SuiteCommerce';
+import SuiteCommerceCustomization from './pages/SuiteCommerceCustomization';
+import SuiteCommerceDevelopment from './pages/SuiteCommerceDevelopment';
 import Contact from './pages/Contact';
 import Blog from './pages/Blog';
 import FirstBlogPost from './pages/blog/FirstBlogPost';
@@ -22,7 +27,12 @@ function App() {
             <Route path="/about" element={<AboutUs />} />
             <Route path="/services" element={<Services />} />
             <Route path="/netsuite" element={<NetSuite />} />
+            <Route path="/netsuite/implementation" element={<NetSuiteImplementation />} />
+            <Route path="/netsuite/customization" element={<NetSuiteCustomization />} />
+            <Route path="/netsuite/integration" element={<NetSuiteIntegration />} />
             <Route path="/suitecommerce" element={<SuiteCommerce />} />
+            <Route path="/suitecommerce/customization" element={<SuiteCommerceCustomization />} />
+            <Route path="/suitecommerce/development" element={<SuiteCommerceDevelopment />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/first-blog-post" element={<FirstBlogPost />} />

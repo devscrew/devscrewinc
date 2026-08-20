@@ -8,9 +8,9 @@ import menuConfig from '../config/menuConfig.js';
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [openLevels, setOpenLevels] = useState({
-    level1: null, // Top-level menu (e.g., "Services")
-    level2: null, // Second-level menu (e.g., "NetSuite", "SuiteCommerce")
-    level3: null  // Third-level menu (e.g., "Implementation", "Customization")
+    level1: null,
+    level2: null,
+    level3: null
   });
   const [currentPath, setCurrentPath] = useState('');
   const location = useLocation();
@@ -77,7 +77,6 @@ const Header = () => {
   // Handle menu hover leave for desktop - close submenu when mouse leaves dropdown
   const handleMouseLeave = (path, level) => {
     // For desktop, we want to close the submenu when leaving it
-    // This will only be called on the dropdown container itself, not the toggle button
     setOpenLevels(prev => {
       let newLevels = { ...prev };
 
@@ -97,7 +96,7 @@ const Header = () => {
     });
   };
 
-  // Mobile toggle functionality (preserved)
+  // Mobile toggle functionality
   const toggleMenu = (path) => {
     setOpenLevels(prev => {
       if (prev.level1 === path) {
@@ -146,7 +145,7 @@ const Header = () => {
                 }
               }}
               onClick={(e) => {
-                // Mobile click behavior - this only applies to mobile
+                // Mobile click behavior
                 const isDesktop = window.innerWidth >= 769;
                 if (!isDesktop) {
                   e.preventDefault();

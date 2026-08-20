@@ -8,10 +8,10 @@ const NetSuite = () => {
       <section className="hero-section hero-section--netsuite">
         <div className="container">
           <div className="text-center mb-8">
-            <h1 className="section-title">NetSuite ERP Solutions</h1>
-            <p className="hero-description mb-4">DevsCrew Inc. delivers comprehensive NetSuite ERP implementation and customization services tailored to your business needs.</p>
+            <h1 className="section-title">NetSuite ERP Solutions for Business Growth</h1>
+            <p className="hero-description mb-4">Streamline operations, automate financial processes, and achieve tax compliance with expert NetSuite implementation. Our certified professionals deliver measurable results: accurate data migration, e-invoicing readiness, and seamless integrations that drive your business forward.</p>
             <div className="cta-button">
-              <Link to="/contact" className="btn btn-primary">Schedule a Consultation</Link>
+              <Link to="/contact" className="btn btn-primary">Get Started Today</Link>
             </div>
           </div>
         </div>
@@ -23,25 +23,33 @@ const NetSuite = () => {
           <div className="text-center mb-8">
             <p className="section-subtitle">OUR NETSUITE SOLUTIONS</p>
             <h2 className="section-title">Comprehensive NetSuite Services</h2>
-            <p>From implementation to ongoing support, we provide end-to-end NetSuite solutions that drive business growth.</p>
+            <p>Deliver measurable business outcomes with our end-to-end NetSuite solutions—from implementation to ongoing support.</p>
           </div>
 
           <div className="grid services-grid">
             <div className="service-card">
               <h3 className="service-title">ERP Implementation</h3>
-              <p className="service-description">End-to-end implementation of NetSuite ERP solutions tailored to your business needs, ensuring seamless integration with existing systems.</p>
+              <p className="service-description">End-to-end NetSuite ERP implementation aligned to your business goals. Our certified professionals deliver faster deployment, streamlined go-live processes, and measurable ROI from day one.</p>
             </div>
             <div className="service-card">
-              <h3 className="service-title">System Configuration</h3>
-              <p className="service-description">Custom configuration of NetSuite ERP to match your specific business processes and requirements for optimal efficiency.</p>
+              <h3 className="service-title">System Configuration & Customization</h3>
+              <p className="service-description">Tailor NetSuite to your unique workflows with custom configuration, SuiteScript development, and workflow automation. We configure roles, permissions, financial settings, inventory management, and industry-specific solutions.</p>
             </div>
             <div className="service-card">
-              <h3 className="service-title">Data Migration</h3>
-              <p className="service-description">Seamless data migration from legacy systems to NetSuite with full data integrity and minimal business disruption.</p>
+              <h3 className="service-title">Data Migration Services</h3>
+              <p className="service-description">Seamless migration from legacy ERPs (SAP, Microsoft Dynamics, Oracle), spreadsheets, and third-party systems. Our proven methodology ensures data cleansing, validation testing, detailed field mapping, zero-loss transfer of financial records, customer data, inventory, and transaction history with minimal downtime.</p>
+            </div>
+            <div className="service-card">
+              <h3 className="service-title">E-Invoicing & Tax Compliance</h3>
+              <p className="service-description">Stay compliant across Middle East markets with FTA (UAE), ZATCA Phase 2 (Saudi Arabia VAT e-invoicing), and regional tax authority requirements. We implement XML/QR-code invoice generation, real-time clearinghouse integration, automated VAT calculations, audit-ready reporting, and continuous regulatory updates.</p>
             </div>
             <div className="service-card">
               <h3 className="service-title">Integration Services</h3>
-              <p className="service-description">Connect NetSuite with third-party applications and systems to create a unified digital ecosystem.</p>
+              <p className="service-description">Build unified business operations by connecting NetSuite to e-commerce (Shopify, Magento), CRM (Salesforce), WMS, payment gateways, shipping carriers, and custom applications via SuiteTalk REST/SOAP APIs.</p>
+            </div>
+            <div className="service-card">
+              <h3 className="service-title">Managed Support & SLAs</h3>
+              <p className="service-description">Enterprise-grade managed services with defined service level agreements (SLAs) for critical, high, and medium priority incidents. Receive 24/7 proactive monitoring, quarterly system health assessments, release patch management, performance tuning, user training, and dedicated account support to ensure continuous platform optimization.</p>
             </div>
           </div>
         </div>
